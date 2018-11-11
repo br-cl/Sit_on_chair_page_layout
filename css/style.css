@@ -1,0 +1,690 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(../font/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Light;
+    src: url(../font/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url(../font/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url(../font/Raleway-SemiBold.ttf);
+}
+
+/* SEKCJA MENU ********************************************************************************************************/
+/* Nagłówek strony - header */
+header {
+    background-color: #000;
+    width: 100%;
+}
+
+/* Kontener centrujący - container */
+.container {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.row__sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Logo */
+a {
+    margin: 0 10px;
+    padding: 13px 7px 13px 7px;
+    font-size: 15px;
+    font-family: Raleway-Light, Arial, sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header .container div > a:hover{
+    color: #fff;
+}
+
+a:hover {
+    color: #24ba9f;
+}
+
+.row__sb a > span {
+    font-size: 15px;
+    font-family: Raleway-Bold, Arial, sans-serif;
+    color: #24ba9f;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Wycentrowanie w pionie menu dropdown */
+nav {
+    align-self: center;
+    justify-self: flex-end;
+    margin: 0 10px;
+}
+
+/* Ukryte elementy menu */
+.column {
+    margin-top: 22px;
+    position: relative;
+    display: none;
+}
+
+/* Pojawianie się elementów menu po najechaniu */
+li:hover .column {
+    font-size: 15px;
+    font-family: Raleway-Light, Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+    letter-spacing: 1px;
+    position: absolute;
+    display: block;
+}
+
+/* Transformacja tekstu z dużych liter na pierwszą dużą literę w menu dropdown */
+.column li > a {
+    text-transform: capitalize;
+}
+
+/* Szerokość menu dropbox */
+.column li {
+    padding: 7px 0;
+}
+
+/* Malowanie strzałki między menu głównym, a menu dropdown */
+.column:before {
+    top: calc(0% - 10px);
+    left: calc(50% - 14px);
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border-bottom: 10px solid #000;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+/* SLIDER *************************************************************************************************************/
+/* Panel sekcji slidera */
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.slider {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    background-image: linear-gradient(#f9f9f9, #d0cfd4);
+}
+
+/* Przyciski slidera */
+.slider__back, .slider__next {
+    align-self: center;
+}
+
+.slider__back a, .slider__next a {
+    margin: 0;
+    padding: 200px 0;
+    font-size: 80px;
+    font-family: Raleway-Light, Arial, sans-serif;
+    color: #24ba9f;
+}
+
+.slider__back a:hover, .slider__next a:hover {
+    color: #a1e6d1;
+}
+
+/* Ostylowanie elementów w kontenerze z opisem */
+.column__center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.column__center h2 {
+    padding-top: 4px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-family: Raleway-Medium, Arial, sans-serif;
+    color: #000;
+    text-indent: 27px;
+    text-transform: uppercase;
+}
+
+.column__center p {
+    padding-bottom: 29px;
+    font-size: 14px;
+    font-family: Raleway-Light, Arial, sans-serif;
+    color: #000;
+    line-height: 21px;
+    width: 80%;
+    text-indent: 20px;
+}
+
+.column__center a {
+    margin-left: 77px;
+    padding: 13px 40px;
+    font-size: 22px;
+    background-color: #24ba9f;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.column__center a:hover {
+    background-color: transparent;
+    padding: 12px 40px;
+    border: 1px solid #24ba9f;
+    color: #24ba9f;
+}
+
+.column__center span {
+    color: #24ba9f;
+    font-family: Raleway-Bold, Arial, sans-serif;
+}
+
+/* Usunięcie stretcha flexowego dla zdjęcia */
+.row__sb img {
+    align-self: center;
+}
+
+/* Sekcja Items *******************************************************************************************************/
+/* Panel sekcji boxów */
+section.items {
+    height: 350px;
+    background-color: #fff;
+}
+
+/* Stałe ustawienia dla wszystkich boxów */
+.box {
+    margin: 30px 15px;
+    width: 33%;
+    height: 230px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 15px;
+    font-family: Raleway-Bold, Arial, sans-serif;
+    border: 1px solid #d9d9d9;
+}
+
+.box--first {
+    margin: 30px 15px 30px 0;
+    background-image: url("../images/box1_img.jpg");
+}
+
+.box--second {
+    background-image: url("../images/box2_img.jpg");
+}
+
+.box--third {
+    margin: 30px 0 30px 15px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    height: 255px;
+    border: 1px solid #d9d9d9;
+}
+
+.box--third p {
+    margin: 15px 0 0 0;
+    font-size: 14px;
+    font-family: Raleway, Arial, sans-serif;
+    color: #7d7d7d;
+    line-height: 18px;
+}
+
+h5 > a {
+    color: #000;
+    font-size: 15px;
+    font-family: Raleway-Bold, Arial, sans-serif;
+    margin: 0 0 3px 0;
+    text-transform: none;
+    letter-spacing: 0px;
+}
+
+/* Pasek napisu */
+.box--first > div, .box--second > div {
+    padding: 10px 15px;
+    width: 100%;
+    height: 65px;
+    bottom: 7%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.box--first:hover, .box--second:hover {
+    border: 1px solid #24ba9f;
+    transform: scale(0.9);
+}
+
+/* Zielony pasek w boxie */
+.box--strap {
+    top: calc(50% - 4px);
+    width: 45%;
+    height: 8px;
+    background-color: #24ba9f;
+}
+
+/* Sekcja Cennik - Price***********************************************************************************************/
+/* Panael sekcji ceny */
+section.price {
+    height: 725px;
+    background-color: #f1f1f1;
+}
+
+h3 {
+    margin: 45px 0 7px 0;
+    color: #5e5e5e;
+    font-size: 21px;
+    font-family: Raleway-Medium, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.box--styleodd {
+    border: 2px solid #d2d2d2;
+    background-color: #f9f9f9;
+}
+
+.box--styleeven {
+    border: 2px solid #24ba9f;
+    background-color: #24ba9f;
+}
+
+.box--styleevenwhite {
+    border: 2px solid #f9f9f9;
+    background-color: #f9f9f9;
+}
+
+.box--styleodd h3 {
+    color: #24ba9f;
+}
+
+.box--styleeven h3 {
+    color: #fff7ff;
+}
+
+/* Ustawienia ogólne dużych kółek */
+.box .box--bigcircle {
+    top: calc(0% - 40px);
+    left: calc(50% - 29px);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Ustawienia ogólne małych kółek */
+.box .box--bigcircle .box--smallcircle {
+    top: calc(50% - 13px);
+    left: calc(50% - 13px);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.box--styleodd .box--smallcircle {
+    background-color: #d2d2d2;
+}
+
+.box--styleeven .box--smallcircle {
+    background-color: #f9f9f9;
+}
+
+/* Zmiana długości zielonego paska box--strap */
+.price .container .box--strap {
+    margin: 0 0 75px 0;
+    width: 30%;
+}
+
+/* Ustawienie boxów - rozmiar, flex, center */
+.box--column {
+    margin: 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Marginesy dla 1-go i ostatniego boxu price */
+.box--column:first-child {
+    margin: 0 25px 0 0;
+}
+
+.box--column:last-child {
+    margin: 0 0 0 25px;
+}
+
+/* Ogólne ustawienia dla nagłówka boxów */
+.box--column h3 {
+    margin: 25px 0 0 0;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+
+/* Cena w kółku */
+.box--column article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    top: 27px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Style dla ceny - kwoty */
+.box--column article p:first-child {
+    margin: 0 0 0 -20px;
+    position: relative;
+    font-family: Raleway-Bold, Arial, sans-serif;
+    font-size: 45px;
+}
+
+/* Style dla ceny - opisu waluty / miesiąc */
+.box--column article p:nth-child(2) {
+    margin: 0;
+    font-size: 17px;
+}
+
+/* Kolor cen niepatrzystych i parzystych */
+.box--column:nth-child(odd) article p {
+    color: #d2d2d2;
+}
+
+.box--column:nth-child(2) article p {
+    color: #24ba9f;
+}
+
+p sup {
+    position: absolute;
+    font-size: 17px;
+    margin: 22px 0 0 0;
+}
+
+/* Ogólne ustawienia dla tabel */
+table {
+    margin: 63px 0 0 0;
+    width: 100%;
+    text-align: center;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 23px;
+}
+
+tr td {
+    padding: 10px 0;
+}
+
+/* Nieparzyste TD w TR dla stylu styleodd */
+tr:nth-child(odd) td {
+    background-color: #e4e4e4;
+    color: #919191;
+}
+
+/* Parzyste TD w TR  dla stylu styleodd*/
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+    color: #797979;
+}
+
+/* Nieparzyste TD w TR dla stylu styleeven */
+.box--styleeven table tr:nth-child(odd) td {
+    background-color: #fff;
+    color: #9f9f9f;
+}
+
+/* Parzyste TD w TR dla stylu styleeven */
+.box--styleeven table tr:nth-child(even) td {
+    background-color: #f1f1f1;
+    color: #9f9f9f;
+}
+
+/* Ogólne ustawienia dla przycisku dołącz */
+.box--styleeven a, .box--styleodd a {
+    margin: 0;
+    padding: 8px 28px;
+    position: absolute;
+    bottom: 15px;
+    font-family: Raleway, Arial, sans-serif;
+    border-radius: 8px;
+}
+
+.box--styleodd a {
+    background-color: #24ba9f;
+}
+
+.box--styleodd a:hover {
+    background-color: transparent;
+    color: #24ba9f;
+    border: 1px solid #24ba9f;
+}
+
+.box--styleeven a {
+    background-color: #fff;
+    color: #24ba9f;
+}
+
+.box--styleeven a:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* Sekcja Kontakt - Form***********************************************************************************************/
+/* Ustawienia sekcji kontakt */
+section.contact {
+    width: 100%;
+    height: 525px;
+    background-color: #fff;
+}
+
+/* Zmiana wielkości paska */
+.contact .container .box--strap {
+    margin: 0 0 33px 0;
+    width: 32%;
+}
+
+.input__style div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Rozszerzenie pierwszego div do 60% szerokości */
+.input__style div:first-child {
+    width: 60%;
+}
+
+.input__style div:last-child {
+    position: relative;
+    width: 30%;
+}
+
+/* Ogólne style dla inputów i textarea */
+.input__style input, .input__style textarea {
+    margin: 13px 0;
+    border: 1px solid #a1e6d1;
+    font-size: 30px;
+    font-family: Raleway-Light, Arial, sans-serif;
+    padding: 5px 14px;
+    transform: translate3d(0, 4px, 0);
+}
+
+.input__style input {
+    height: 65px;
+}
+
+.input__style textarea {
+    resize: none;
+    height: 190px;
+}
+
+.input__style textarea:hover, .input__style input:hover {
+    border: 1px solid #24ba9f;
+}
+
+/* Edycja placeholderów dla inputów dla różnych przeglądarek */
+::-webkit-input-placeholder {
+    color: #c9c9c9;
+    font-size: 30px;
+    font-family: Raleway-Light, Arial, sans-serif;
+}
+
+::-moz-placeholder {
+    color: #c9c9c9;
+    font-size: 30px;
+    font-family: Raleway-Light, Arial, sans-serif;
+}
+
+::-ms-input-placeholder {
+    color: #c9c9c9;
+    font-size: 30px;
+    font-family: Raleway-Light, Arial, sans-serif;
+}
+
+/* Styl przycisku Wyślij */
+.input__style div a {
+    margin: 0;
+    padding: 8px 28px;
+    position: absolute;
+    bottom: 6px;
+    background-color: #24ba9f;
+    font-size: 30px;
+    font-family: Raleway-Bold, Arial, sans-serif;
+    border-radius: 8px;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+}
+
+.input__style div a:hover {
+    background-color: #fff;
+    color: #24ba9f;
+    border: 1px solid #24ba9f;
+}
+
+/* Napis obok przycisku */
+.checkbox__label {
+    margin: 40px 0;
+    padding: 0 0 0 65px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: #bdbdbd;
+    font-size: 19px;
+    font-family: Raleway-Light, Arial, sans-serif;
+}
+
+/* Ukrycie domyślnego checkboxa */
+.checkbox__label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Styl własnego checkboxa */
+.checkbox__custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border: 1px solid #a1e6d1;
+}
+
+/* Kolor przy najechaniu na checkbox - każy element .checkbox__custom jeśli tylko wsytępuje po inpucie */
+.checkbox__label:hover input ~ .checkbox__custom {
+    border: 1px solid #24ba9f;
+}
+
+/* Dodawanie "ptaszka" - domyślnie ukryty */
+.checkbox__custom:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Pokazywanie "ptaszka" kiedy zaznaczony checkbox */
+.checkbox__label input:checked ~ .checkbox__custom:after {
+    display: block;
+}
+
+/* Styl ptaszka */
+.checkbox__label .checkbox__custom:after {
+    width: 48px;
+    height: 40px;
+    background: url("../images/form_ok.jpg") no-repeat;
+}
+
+.checkbox__label span {
+    padding: 4px 0 0 0;
+}
+
+/* Sekcja Stopka - Footer**********************************************************************************************/
+/* Stopka strony */
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 132px;
+    letter-spacing: 1px;
+    color: #9b9b9b;
+    font-family: Raleway-Medium, Arial, sans-serif;
+}
+
+footer .container div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialmedia img {
+    margin: 0 2px;
+}
+
+/* Ostatnie logo Tweeter ma się odsunąć od napisu */
+.socialmedia img:last-of-type {
+    margin: 0 43px 0 0;
+}
+
+.socialmedia img:hover {
+    background-color: #24ba9f;
+    border-radius: 100%;
+    border: 2px solid #24ba9f;
+}
+
+.socialmedia p {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: Raleway-SemiBold, Arial, sans-serif;
+}
+
+.socialmedia p span {
+    font-family: Raleway-Bold, Arial, sans-serif;
+}
