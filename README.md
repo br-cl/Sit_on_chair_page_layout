@@ -1,4 +1,4 @@
-# ->Sit on chair layout<-
+
 
 Prepared, cut page layout (Sit on Chair). This layout includes clear HTML5 and CSS3 (without JS, Sass and other Frontend stuff). 
 
