@@ -1,7 +1,10 @@
-# "Sit On Chair 1-Page Layout"
-Prepared, cut page layout (Sit on Chair Company) compatible with the graphic design.
+[logo]: http://ifotos.pl/zobacz/Logopng_qwhwxrw.png "TLD"
+
+# Sit on chair layout
+Prepared, cut page layout (Sit on Chair). This layout includes clear HTML5 and CSS3 (without JS, Sass and other Frontend stuff). 
 
 <strong><h1>Inspiration</h1></strong>
+
 
 <strong><h1>Features</h1></strong>
 * hyperlink logo;
@@ -13,4 +16,6 @@ Prepared, cut page layout (Sit on Chair Company) compatible with the graphic des
 * stylized checkbox;
 * minimalistic footer;
 
-<strong><h1>How download?</h1></strong>
+<strong><h1>Install</h1></strong>
+You can clone the repository:
+`git clone https://github.com/TuneLord/Sit_on_chair_page_layout.git`
