@@ -1,7 +1,9 @@
 # "Sit On Chair 1-Page Layout"
 Prepared, cut page layout (Sit on Chair Company) compatible with the graphic design.
 
-This page contains:
+<strong><h1>Inspiration</h1></strong>
+
+<strong><h1>Features</h1></strong>
 * hyperlink logo;
 * dropdown menu;
 * slider with hyperlink button;
@@ -11,3 +13,4 @@ This page contains:
 * stylized checkbox;
 * minimal footer;
 
+<strong><h1>How download?</h1></strong>
