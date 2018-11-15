@@ -85,7 +85,7 @@
 <section class="price">
     <article class="container">
         <h3>cennik</h3>
-        <div class="box--strap"></div>
+        <div class="box--strap"></div><!-- Zdecydowanie powinno to być zrobione jako pseudoelement do h3 -->
         <div class="row__sb">
             <div class="box box--column box--styleodd"> <!-- Tutaj o wiele lepiej było by uzyc nth-child do sprawdzenia ktore boxy sa parzyste a ktore nie -->
                 <div class="box--bigcircle box--styleodd">
@@ -165,7 +165,7 @@
     <article class="container">
         <h3>kontakt</h3>
         <div class="box--strap"></div>
-        <div class="row__sb input__style">
+        <div class="row__sb input__style"> <!-- Brak znacznika form -->
             <div>
                 <input type="text" placeholder="Imię">
                 <input type="email" placeholder="email">
@@ -177,7 +177,7 @@
                     <input type="checkbox" checked="checked">
                     <span class="checkbox__custom"></span>
                 </label>
-                <a href="#">Wyślij</a>
+                <a href="#">Wyślij</a><!-- Zmiana na button konieczna -->
             </div>
         </div>
     </article>
@@ -188,7 +188,7 @@
         <div>
             <p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
             <div class="socialmedia">
-                <img src="images/flickr.png" alt="flickr">
+                <img src="images/flickr.png" alt="flickr"> <!-- Kazdy z linkow powienien byc klikalny, sa to linki do sociali -->
                 <img src="images/vimeo.png" alt="vimeo">
                 <img src="images/pinterest.png" alt="pinterest">
                 <img src="images/twitter.png" alt="tweeter">
